@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTron", "iTron\iTron.csproj", "{86A152C4-785E-4F03-893F-0D8DC72E1532}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Debug|iPhone.Build.0 = Debug|iPhone
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Release|iPhone.ActiveCfg = Release|iPhone
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Release|iPhone.Build.0 = Release|iPhone
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{86A152C4-785E-4F03-893F-0D8DC72E1532}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = iTron\iTron.csproj
+	EndGlobalSection
+EndGlobal

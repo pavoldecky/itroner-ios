@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86A152C4-785E-4F03-893F-0D8DC72E1532}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>iTron</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>iTron</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName>
+    </IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <DefineConstants>__MOBILE__;__IOS__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="MonoTouch.Dialog-1" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\off%402x.jpeg" />
+    <BundleResource Include="Resources\on%402x.jpeg" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\button1_off_5%402x.png" />
+    <BundleResource Include="Resources\button1_off%402x.png" />
+    <BundleResource Include="Resources\button1_on_5%402x.png" />
+    <BundleResource Include="Resources\button1_on%402x.png" />
+    <BundleResource Include="Resources\button2_off_5%402x.png" />
+    <BundleResource Include="Resources\button2_off%402x.png" />
+    <BundleResource Include="Resources\button2_on_5%402x.png" />
+    <BundleResource Include="Resources\button2_on%402x.png" />
+    <BundleResource Include="Resources\button3_off_5%402x.png" />
+    <BundleResource Include="Resources\button3_off%402x.png" />
+    <BundleResource Include="Resources\button3_on_5%402x.png" />
+    <BundleResource Include="Resources\button3_on%402x.png" />
+    <BundleResource Include="Resources\button4_off_5%402x.png" />
+    <BundleResource Include="Resources\button4_off%402x.png" />
+    <BundleResource Include="Resources\button4_on_5%402x.png" />
+    <BundleResource Include="Resources\button4_on%402x.png" />
+    <BundleResource Include="Resources\320x480.png" />
+    <BundleResource Include="Resources\640x960.png" />
+    <BundleResource Include="Resources\640x1136.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\logo_platne%402x.png" />
+    <BundleResource Include="Resources\29x29.png" />
+    <BundleResource Include="Resources\57x57.png" />
+    <BundleResource Include="Resources\58x58%402x.png" />
+    <BundleResource Include="Resources\80x80%402x.png" />
+    <BundleResource Include="Resources\114x114%402x.png" />
+    <BundleResource Include="Resources\120x120%402x.png" />
+    <BundleResource Include="Resources\512x512.png" />
+    <BundleResource Include="Resources\1024x2014.png" />
+    <BundleResource Include="Resources\pozadie%402x.png" />
+    <BundleResource Include="Resources\button5_off_5%402x.png" />
+    <BundleResource Include="Resources\button5_off%402x.png" />
+    <BundleResource Include="Resources\button5_on_5%402x.png" />
+    <BundleResource Include="Resources\button5_on%402x.png" />
+    <BundleResource Include="Resources\button6_off_5%402x.png" />
+    <BundleResource Include="Resources\button6_off%402x.png" />
+    <BundleResource Include="Resources\button6_on_5%402x.png" />
+    <BundleResource Include="Resources\button6_on%402x.png" />
+    <BundleResource Include="Resources\button7_off_5%402x.png" />
+    <BundleResource Include="Resources\button7_off%402x.png" />
+    <BundleResource Include="Resources\button7_on_5%402x.png" />
+    <BundleResource Include="Resources\button7_on%402x.png" />
+    <BundleResource Include="Resources\button8_off_5%402x.png" />
+    <BundleResource Include="Resources\button8_off%402x.png" />
+    <BundleResource Include="Resources\button8_on_5%402x.png" />
+    <BundleResource Include="Resources\button8_on%402x.png" />
+    <BundleResource Include="Resources\button9_off_5%402x.png" />
+    <BundleResource Include="Resources\button9_off%402x.png" />
+    <BundleResource Include="Resources\button9_on_5%402x.png" />
+    <BundleResource Include="Resources\button9_on%402x.png" />
+    <BundleResource Include="Resources\button10_off_5%402x.png" />
+    <BundleResource Include="Resources\button10_off%402x.png" />
+    <BundleResource Include="Resources\button10_on_5%402x.png" />
+    <BundleResource Include="Resources\button10_on%402x.png" />
+    <BundleResource Include="Resources\button11_off_5%402x.png" />
+    <BundleResource Include="Resources\button11_off%402x.png" />
+    <BundleResource Include="Resources\button11_on_5%402x.png" />
+    <BundleResource Include="Resources\button11_on%402x.png" />
+    <BundleResource Include="Resources\button12_off_5%402x.png" />
+    <BundleResource Include="Resources\button12_off%402x.png" />
+    <BundleResource Include="Resources\button12_on_5%402x.png" />
+    <BundleResource Include="Resources\button12_on%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="iTronViewController.cs" />
+    <Compile Include="iTronViewController.designer.cs">
+      <DependentUpon>iTronViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.cs" />
+    <Compile Include="MainView.designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Helpers\Constant.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="Helpers\SmsTask.cs" />
+    <Compile Include="TestController.cs" />
+    <Compile Include="TestController.designer.cs">
+      <DependentUpon>TestController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsController.cs" />
+    <Compile Include="MainController.cs" />
+    <Compile Include="MainController.designer.cs">
+      <DependentUpon>MainController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="iTronViewController.xib">
+      <DependentUpon>MainView.xib</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="MainView.xib" />
+    <InterfaceDefinition Include="TestController.xib" />
+    <InterfaceDefinition Include="MainController.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+</Project>
